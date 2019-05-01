@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF064"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    >
+    <!-- collective space logo  -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/collective_space_logo" />
+
+    <!-- input section of the activity  -->
+    <LinearLayout
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/logo">
+
+        <!-- text box for username input  -->
+        <EditText
+            android:id="@+id/editText4"
+            style="@style/editText_style"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- text box for password input  -->
+        <EditText
+            android:id="@+id/editText3"
+            style="@style/editText_style"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <!-- sign in button  -->
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/SignInButton_style"
+            android:layout_height="wrap_content"
+            android:onClick="interestPage"
+            android:text="Sign in"
+            android:textColor="@color/myMainYellow" />
+
+        <!--vertical layout for FB and Google buttons  -->
+        <LinearLayout
+            android:id="@+id/FB_Google_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <!--facebook button -->
+            <Button
+                style="@style/FButton_style"
+                android:text="FACEBOOK"
+                android:textColor="@color/TextGrey" />
+
+            <!--google button -->
+            <Button
+                style="@style/FButton_style"
+                android:text="Google"
+                android:textColor="@color/TextGrey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

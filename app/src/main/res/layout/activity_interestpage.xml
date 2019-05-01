@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interestpage"
+    android:gravity="center"
+    android:background="@color/White">
+
+    <!-- layout of top section  -->
+    <LinearLayout
+        android:id="@+id/interest_top"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="vertical"
+        android:background="#F8F8F8">
+
+        <!-- 'what interests you' text  -->
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="What interests you? "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- search feature  -->
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/interest_top"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#F8F8F8"
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:paddingRight="10dp"
+            android:queryHint="Search here" />
+    </LinearLayout>
+
+    <!-- layout of interest topics  -->
+    <RelativeLayout
+        android:id="@+id/chipButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <!--    I used Material Chip view (referenced below) to create Chips on the screen
+
+                Material Chip View©
+                Copyright 2017 Robert Levonyan
+                Url: https://github.com/robertlevonyan/materialChipView   -->
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="TECHNOLOGY"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/myMainYellow"
+            app:mcv_textColor="@color/Black" />
+
+         <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip1"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="MEDIA"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Red1"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/chip2"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="HISTORY"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Green3"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip1"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="DATA ANALYTICS"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Purple1"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip4"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="COMPUTER SCIENCE"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Blue2"
+            app:mcv_textColor="@color/Black" />
+
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip4"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="FOOD SCIENCE"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Yellow2"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip5"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip7"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="MEDICINE"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Green6"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip5"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip8"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="ART"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Orange1"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip7"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="GAME DEVELOPMENT"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Pink1"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip8"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip10"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="MARKETING"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Purple4"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip10"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="INTERACTIVE DESIGN"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/myMainBlue"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip11"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip12"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="SOCIAL SCIENCE"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Yellow3"
+            app:mcv_textColor="@color/Black"/>
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip12"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="DANCE"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/myMainRed"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip13"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip14"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="TOURISM"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Green4"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip13"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip15"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="ENVIRONMENT"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Orange2"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip14"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="CREATIVE WRITING"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/myMainGreen"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip16"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip17"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="UI/UX DESIGN"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Purple2"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip17"
+            android:layout_marginTop="13dp"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="BUSINESS"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Pink3"
+            app:mcv_textColor="@color/Black" />
+
+        <com.robertlevonyan.views.chip.Chip
+            android:id="@+id/chip21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chip18"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/chip20"
+            app:mcv_backgroundColor="#EBEBEC"
+            app:mcv_chipText="PROJECT MANAGEMENT"
+            app:mcv_closeColor="@color/TextGrey"
+            app:mcv_selectable="true"
+            app:mcv_selectedTextColor="@color/Black"
+            app:mcv_selectedBackgroundColor="@color/Blue3"
+            app:mcv_textColor="@color/Black" />
+
+    </RelativeLayout>
+
+    <!-- continue button  -->
+    <Button
+        android:id="@+id/buttonContinue"
+        style="@style/YellowButton_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:onClick="continueButton"
+        android:text="Choose 3 to continue"
+        android:textColor="@color/Black"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
+

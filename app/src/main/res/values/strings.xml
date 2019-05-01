@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CollectiveSpace</string>
+    <string name="title_activity_projectpape">projectpape</string>
+    <string name="title_activity_projectpage">projectpage</string>
+    <string name="title_activity_feedbackpage">feedbackpage</string>
+
+</resources>
