@@ -2,7 +2,8 @@
 # Collective Space
 
 An app for maximising learning experience of university students through networking and collaboration. 
-For more information about the app, you can visit the [wiki page](https://github.com/emheyd/CollectiveSpace/wiki)
+
+For more information about the app, you can visit the [wiki page](https://github.com/emheyd/CollectiveSpace/wiki).
 
 This document and the project is created for CS6382 CS STUDIO I's final project. 
 
