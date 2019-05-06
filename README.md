@@ -27,8 +27,8 @@ Email: emheyd@gmail.com
 
 ## Contact
  
-*Email: emheyd@gmail.com
-*blog: https://iamemmad.wordpress.com/
+* Email: emheyd@gmail.com
+* blog: https://iamemmad.wordpress.com/
 
 ## License
 Collective Space©  Copyright (C) 2019 emheyd
