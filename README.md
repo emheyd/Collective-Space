@@ -18,7 +18,7 @@ Unzip it and through Android Studio, open the CollectiveSpace folder to be able 
 
 ## Versioning
 
-1.0
+* 1.0
 
 ## Author
 
