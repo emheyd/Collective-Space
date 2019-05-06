@@ -25,6 +25,11 @@ Unzip it and through Android Studio, open the CollectiveSpace folder to be able 
 **Emad Heydari - 17031273** - [emheyd](https://github.com/emheyd). 
 Email: emheyd@gmail.com
 
+## Contact
+ 
+*Email: emheyd@gmail.com
+*blog: https://iamemmad.wordpress.com/
+
 ## License
 Collective Space©  Copyright (C) 2019 emheyd
 This project is licensed under the GNU GENERAL PUBLIC LICENSE License - see the [LICENSE](https://github.com/emheyd/CollectiveSpace/blob/master/LICENSE) file for details
