@@ -30,6 +30,6 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE License - see the 
 
 ## Acknowledgments
 
-* In interestpage_acitivity.xml, I have used [materialChipView](https://github.com/robertlevonyan/materialChipView) which was created by [Robert](https://github.com/robertlevonyan)
+* In interestpage_acitivity.xml file, I have used [materialChipView](https://github.com/robertlevonyan/materialChipView) which was created by [Robert](https://github.com/robertlevonyan)
 
 
