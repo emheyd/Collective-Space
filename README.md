@@ -1,9 +1,9 @@
 
 # Collective Space
 
-An app for maximising learning experience of university students through networking and collaboration. 
+An app for maximising learning experience of university students through networking and collaboration.For more information about the app, you can visit the [wiki page](https://github.com/emheyd/CollectiveSpace/wiki)
 
-This is a project created for CS Studio module. For more information about the app, you can visit the [wiki page](https://github.com/emheyd/CollectiveSpace/wiki)
+This is a project created for CS6382 - CS - STUDIO I.
 
 ### Prerequisites
 
@@ -23,7 +23,6 @@ Unzip it and through Android Studio, open the CollectiveSpace folder to be able 
 ## Author
 
 **Emad Heydari - 17031273** - [emheyd](https://github.com/emheyd). 
-Email: emheyd@gmail.com
 
 ## Contact
  
